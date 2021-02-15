@@ -1,0 +1,680 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+.first-screen {
+  min-height: 1080px;
+  background-image: url(../img/firstScreenFon.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 55px;
+
+  a {
+    font-family: "Stolzl Book", sans-serif;
+  }
+}
+
+.logo {
+  width: 25%;
+  display: flex;
+  align-items: flex-end;
+
+  img {
+    display: block;
+  }
+}
+
+.menu {
+  width: 50%;
+}
+
+.menu__box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu__item {
+  a {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #ffffff;
+  }
+}
+
+.header__phone {
+  width: 25%;
+  text-align: end;
+
+  a {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #ffffff;
+  }
+}
+
+.first-screen__header {
+  padding-top: 170px;
+
+  h1 {
+    font-weight: bold;
+    font-size: 82px;
+    line-height: 102px;
+    color: #efefef;
+    margin: 0;
+  }
+}
+
+.first-screen__text {
+  padding-top: 10px;
+
+  p {
+    font-weight: 300;
+    font-size: 27px;
+    line-height: 36px;
+    color: #efefef;
+    margin: 0;
+  }
+}
+
+.first-screen__btn {
+  margin-top: 80px;
+  padding-bottom: 100px;
+
+  a {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #efefef;
+    cursor: pointer;
+    border: 3px solid #efefef;
+    border-radius: 3px;
+    padding: 16px 75px;
+  }
+}
+
+.first-screen__arrow-down {
+  position: absolute;
+  bottom: 18px;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  display: none;
+
+  img {
+    width: 26px;
+    height: 24px;
+  }
+}
+
+.about-us {
+  margin-bottom: 140px;
+}
+
+.about-us__header {
+  height: 242px;
+  background-image: url(../img/aboutUsFonHeader.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-weight: bold;
+    font-size: 78px;
+    line-height: 97px;
+    color: #efefef;
+  }
+}
+
+.about-us__text {
+  p {
+    font-family: "Stolzl Book", sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 40px 0;
+  }
+}
+
+.advantages {
+  margin-bottom: 100px;
+}
+
+.advantages__header {
+  margin-bottom: 85px;
+}
+
+.advantages__items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.advantages__item {
+  text-align: center;
+  margin: 0 15px;
+
+  img {
+    height: 90px;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.partners {
+  background-color: #222222;
+  margin-bottom: 100px;
+  padding-top: 30px;
+}
+
+.partners__header {
+  .section-header__h2 {
+    color: #efefef;
+
+    span {
+      color: transparent;
+      -webkit-text-stroke: 2px #efefef;
+    }
+  }
+}
+
+.partners__img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 70px;
+}
+
+.partner__img {
+  margin: 0 15px;
+}
+
+.equipment {
+  margin-bottom: 100px;
+}
+
+.equipment__items-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.equipment__item {
+  width: 482px;
+  min-height: 324px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 25px;
+  position: relative;
+  margin: 15px 10px;
+
+  span {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    color: #efefef;
+    display: block;
+  }
+
+  a {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #efefef;
+    padding: 5px 30px;
+    border: 2px solid #efefef;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+  }
+}
+
+.compressors {
+  background-image: url(../img/compressors.jpg);
+}
+
+.pumps {
+  background-image: url(../img/pumps.jpg);
+}
+
+.rubberProducts {
+  background-image: url(../img/rubberProducts.jpg);
+}
+
+.ventilation {
+  background-image: url(../img/ventilation.jpg);
+}
+
+.steamTurbines {
+  background-image: url(../img/steamTurbines.jpg);
+}
+
+.rest {
+  background-image: url(../img/rest.jpg);
+}
+
+.leftovers {
+  background-image: url(../img/leftovers.jpg);
+}
+
+.contacts {
+  margin-bottom: 100px;
+
+  p {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
+
+    a {
+      color: #111111;
+    }
+  }
+
+  label {
+    font-family: "Stolzl Book", sans-serif;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.form__wrapper {
+  padding-right: 30px;
+  width: 50%;
+}
+
+.contacts__text {
+  width: 50%;
+  padding-left: 30px;
+}
+
+.contacts__header {
+  margin-bottom: 50px;
+}
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__info {
+  padding-top: 1px;
+}
+
+button {
+  font-family: "Stolzl Book", sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  border: 2px solid #111111;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 15px 60px;
+}
+
+.catalog__fon-img-size {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 80px;
+  padding-top: 20px;
+  border-radius: 10px;
+}
+
+.catalog__text {
+  margin-bottom: 80px;
+
+  p {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 40px 0;
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+.catalog__text-flex {
+  p {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 40px 0;
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+.rubber-products__header {
+  background-image: url(../img/rubberProducts-Header.jpg);
+
+  .section-header__h2 {
+    padding-left: 80px;
+  }
+}
+
+.arrowBack {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.slide__img {
+  width: 100%;
+  max-height: 515px;
+  border-radius: 8.58333px;
+  max-width: 100%;
+  height: auto;
+}
+
+.slider-case {
+  padding: 0 15px;
+}
+
+.slider-arrows {
+  position: absolute;
+  top: 236px;
+  z-index: 99;
+}
+
+.slider-arrows__right {
+  right: 30px;
+}
+
+.slider-arrows__left {
+  left: 30px;
+}
+
+.gallery {
+  margin-bottom: 80px;
+}
+
+.assortment {
+  margin-bottom: 100px;
+}
+
+.assortment__text {
+  p {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 40px 0;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  li {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+.catalog__header {
+  padding-bottom: 35px;
+}
+
+.compressors__header {
+  background-image: url(../img/compressorsFonHeader.jpg);
+
+  .catalog__header {
+    .section-header__h2 {
+      font-size: 68px;
+      line-height: 86px;
+      padding-left: 80px;
+    }
+  }
+}
+
+.pumps__header {
+  background-image: url(../img/pumpsFonHeader.jpg);
+
+  .catalog__header {
+    .section-header__h2 {
+      font-size: 68px;
+      line-height: 86px;
+      padding-left: 80px;
+    }
+  }
+}
+
+.ventilation__header {
+  background-image: url(../img/ventilationFonHeader.jpg);
+
+  .catalog__header {
+    .section-header__h2 {
+      font-size: 63px;
+      line-height: 80px;
+      padding-left: 80px;
+    }
+  }
+}
+
+.steamTurbines__header {
+  background-image: url(../img/steamTurbinesFonHeader.jpg);
+
+  .catalog__header {
+    .section-header__h2 {
+      font-size: 68px;
+      line-height: 86px;
+      padding-left: 80px;
+    }
+  }
+}
+
+.catalog__text-flex {
+  display: flex;
+}
+
+.catalog__text-flex-margin {
+  margin-left: 590px;
+}
+
+.rest__header {
+  background-image: url(../img/restFonHeader.jpg);
+
+  .catalog__header {
+    .section-header__h2 {
+      font-size: 63px;
+      line-height: 80px;
+      padding-left: 80px;
+
+      span {
+        font-size: 44px;
+        line-height: 57px;
+      }
+    }
+  }
+}
+
+.leftovers__header {
+  background-image: url(../img/leftoversFonHeader.jpg);
+
+  .catalog__header {
+    .section-header__h2 {
+      font-size: 80px;
+      line-height: 97px;
+      padding-left: 80px;
+
+      span {
+        font-size: 63px;
+        line-height: 76px;
+      }
+    }
+  }
+}
+
+.thanks {
+  display: none;
+
+  p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.thanks-ok {
+  display: block;
+}
+
+.progress {
+  background-color: #222222;
+  justify-content: flex-start;
+  border-radius: 30px;
+  align-items: center;
+  position: relative;
+  padding: 5px 5px;
+  display: flex;
+  height: 30px;
+  width: 280px;
+  margin-top: 25px;
+  display: none;
+}
+
+.progressvis {
+  display: block;
+}
+
+.progress-value {
+  animation: load 1s ease infinite;
+  border-radius: 30px;
+  background: white;
+  height: 20px;
+  width: 0;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.js-validate-error-label {
+  margin-bottom: 25px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.language-selection {
+  position: absolute;
+  right: 45px;
+  top: 45px;
+  z-index: 999;
+  color: #ffffff;
+  font-family: "Stolzl Book", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.russian,
+.english {
+  color: #ffffff;
+}
+
+.language-active {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.assortment__cards {
+  display: flex;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.assortment__card {
+  flex: 0 0 23%;
+  margin-right: 25px;
+  margin-bottom: 50px;
+}
+
+.card__img {
+  border-radius: 10.52px;
+  display: block;
+  width: 100%;
+}
+
+.card__header {
+  font-size: 29px;
+  line-height: 35px;
+  font-weight: bold;
+  margin: 0;
+  margin: 10px 0;
+}
+
+.card__text {
+  font-size: 21px;
+  line-height: 26px;
+  margin: 0;
+  margin: 10px 0;
+}
+
+.card__quantity {
+  font-size: 21px;
+  line-height: 26px;
+  color: #878a95;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card__wrapper-price-order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__price {
+  display: block;
+  font-weight: bold;
+  font-size: 29px;
+  line-height: 35px;
+}
+
+.card__order {
+  display: inline-block;
+  background-color: #6586b8;
+  border-radius: 10px;
+  padding: 6px 65px;
+}
+
+.card__order-img {
+  display: block;
+}
+
+@import "media";

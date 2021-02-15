@@ -1,0 +1,854 @@
+@media (max-width: 1023px) {
+
+    .lineLeeft {
+        display: none;
+    }
+
+    .lineRight {
+        display: none;
+    }
+
+    .lineRightDown {
+        display: none;
+    }
+
+    .logo {
+        padding-left: 0;
+    }
+
+    .logo>h1 {
+        padding-left: 4.831vw;
+        padding-top: 10.3vw;
+        font-size: 5.761vw;
+    }
+
+    .logoImg {
+        display: none;
+    }
+
+    .headerFon {
+        display: none;
+    }
+
+    .monileHeaderFon {
+        display: block;
+        width: 100vw;
+        height: 177.778vw;
+    }
+
+    .arrowDown {
+        display: none;
+    }
+
+    header {
+        border: none;
+        width: 100vw;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .awards {
+        display: none;
+    }
+
+    .headerBtn {
+        font-size: 3.461vw;
+        top: 112.5vw;
+        left: 4vw;
+        border: 0.242vw solid #FFFFFF;
+        border-radius: 7.692vw;
+        background-color: rgba(0, 0, 0, 0.25);
+        padding-top: 3.1vw;
+        padding-bottom: 3.261vw;
+        padding-left: 6.039vw;
+        padding-right: 6.039vw;
+    }
+
+    .heading {
+        font-size: 7.971vw;
+        padding-left: 4.831vw;
+        padding-right: 4.831vw;
+        line-height: 9.903vw;
+        top: 72.9vw;
+    }
+
+    .headingBandOne {
+        width: 76.2%;
+        height: 2%;
+        top: 44%;
+        left: 4.9%;
+    }
+
+    .headingBandTwo {
+        width: 89%;
+        height: 2%;
+        top: 55.3%;
+        left: 4.9%;
+    }
+
+    .mobileArrowDown {
+        display: block;
+        position: absolute;
+        width: 6.280vw;
+        height: 5.797vw;
+        top: 167.75vw;
+        left: 46.8vw;
+    }
+
+    /* Menu */
+    /* header {
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 4.831vw;
+    padding-right: 4.831vw;
+  } */
+
+    .menu-wrapper {
+        width: 7.971vw;
+        height: 4.348vw;
+        position: absolute;
+        right: 5.331vw;
+        margin: 0;
+        z-index: 999;
+        padding: 0;
+        margin: auto 0 auto 0;
+        display: block;
+        top: 11vw;
+    }
+
+    .hamburger-menu {
+        position: relative;
+        transform: translateY(10px);
+        background: #FFFFFF;
+        transition: all 0ms 300ms;
+        width: 8.454vw;
+        height: 0.966vw;
+    }
+
+    .hamburger-menu.animate {
+        background: rgba(255, 255, 255, 0);
+    }
+
+    .hamburger-menu:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 1.5vw;
+        background: #FFFFFF;
+        transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+            transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        width: 8.454vw;
+        height: 0.966vw;
+    }
+
+    .hamburger-menu:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 1.5vw;
+        background: #FFFFFF;
+        transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+            transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        width: 8.454vw;
+        height: 0.966vw;
+    }
+
+    .hamburger-menu.animate:after {
+        top: 0;
+        transform: rotate(45deg);
+        transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1),
+            transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        background-color: #141414;
+    }
+
+    .hamburger-menu.animate:before {
+        bottom: 0;
+        transform: rotate(-45deg);
+        transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1),
+            transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        background-color: #141414;
+    }
+
+    .menu__box {
+        display: block;
+        position: absolute;
+        overflow: hidden;
+        width: 0;
+        height: 177.778vw;
+        z-index: 1;
+        float: right;
+        right: 0;
+        top: 0;
+        list-style: none;
+        background-color: #F8F8F8;
+        transition: all 0.2s linear;
+    }
+
+    .animationMenu {
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+    }
+
+    .menu__box>li {
+        display: block;
+        width: 400px;
+        text-align: left;
+        position: relative;
+        left: 4.9vw;
+    }
+
+    .menu__itemMobileOne{
+        margin-top: 40vw;
+    }
+
+    .menu__itemMobileTwo {
+        margin-top: 3.25vw;
+    }
+
+    .menu__itemMobileThree {
+        margin-top: 3vw;
+    }
+
+    .menu__itemMobileFour {
+        margin-top: 3vw;
+    }
+
+    .menu__box>li>a {
+        color: #F8F8F8;
+        font-size: 10.773vw;
+        font-weight: 900;
+    }
+
+    nav>ul>h1 {
+        display: block;
+        color: #141414;
+        z-index: 55;
+        position: absolute;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 5.761vw;
+        top: 10.45vw;
+        left: 4.95vw;
+    }
+
+    .menu__itemOne {
+        position: absolute;
+        background-color: #141414;
+        width: 61.353vw;
+        height: 7.246vw;
+        z-index: -1;
+        top: 3vw;
+    }
+
+    .menu__itemTwo {
+        position: absolute;
+        background-color: #141414;
+        width: 66.667vw;
+        height: 7.246vw;
+        z-index: -1;
+        top: 3vw;
+    }
+
+    .menu__itemThree {
+        position: absolute;
+        background-color: #141414;
+        width: 41.546vw;
+        height: 7.246vw;
+        z-index: -1;
+        top: 3vw;
+    }
+
+    .menu__itemFour {
+        position: absolute;
+        background-color: #141414;
+        width: 81.884vw;
+        height: 7.246vw;
+        z-index: -1;
+        top: 3vw;
+    }
+
+    .navEmail {
+        display: block;
+        font-size: 4.348vw;
+        font-weight: 900;
+        margin-top: 21.8vw;
+        margin-left: 4.831vw;
+    }
+
+    .navEmail>span {
+        font-weight: 500;
+    }
+
+    .navTelegram {
+        display: block;
+        font-size: 4.348vw;
+        font-weight: 900;
+        margin-left: 4.831vw;
+    }
+
+    .navTelegram>a {
+        font-weight: 500;
+    }
+
+
+
+
+    /*О нашей студии*/
+    .lineLeeftTwo {
+        display: none;
+    }
+
+    .lineRightTwo {
+        display: none;
+    }
+
+    .company {
+        padding-left: 4.831vw;
+        padding-right: 4.831vw;
+        height: 177.778vw;
+    }
+
+    .company>h1 {
+        display: none;
+    }
+
+    .pointOne {
+        display: none;
+    }
+
+    .companyText {
+        display: block;
+        padding-left: 0;
+        margin: 0;
+        width: initial;
+        padding-top: 12.6vw;
+    }
+
+    .companyImeg {
+        display: none;
+    }
+
+    .h2 {
+        height: 10.870vw;
+    }
+
+    .company>div>div>h2 {
+        font-size: 10.783vw;
+    }
+
+    .fonCompanyText {
+        width: 95%;
+        height: 68%;
+        top: 26.85%;
+    }
+
+    .company>div>h3 {
+        font-size: 8.454vw;
+        width: 88vw;
+        padding-top: 10.65vw;
+    }
+
+    .companyTextFirst {
+        font-size: 4.348vw;
+        padding-top: 1.95vw;
+    }
+
+    .companyTextAll {
+        font-size: 4.348vw;
+        padding-top: 5.05vw;
+        line-height: 5.072vw;
+    }
+
+
+
+
+    /*Партнёрство*/
+    .partnership {
+        padding-top: 12.7vw;
+        padding-right: 4.831vw;
+        padding-left: 4.831vw;
+        height: 164.778vw;
+    }
+
+    .pointTwo {
+        display: none;
+    }
+
+    .partnership>h1 {
+        display: none;
+    }
+
+    .partnershipTextTwo {
+        display: none;
+    }
+
+    .yourApplication {
+        position: relative;
+        top: 0;
+    }
+
+    .threeCards {
+        padding: 0;
+        padding-top: 5.5vw;
+    }
+
+    .cardView {
+        display: block;
+        width: 38.754vw;
+        height: 36.55vw;
+        border-radius: 3.327vw;
+        padding-top: 6vw;
+        padding-left: 1.995vw;
+        padding-right: 1.995vw;
+    }
+
+    .interview {
+        position: absolute;
+        top: 7vw;
+        left: 47.5vw;
+    }
+
+    .registration {
+        margin: 0;
+        margin-left: 5vw;
+        padding-top: 7.55vw;
+        height: 35vw;
+    }
+
+    .training {
+        margin: 0;
+        padding-top: 7.65vw;
+        height: 35vw;
+    }
+
+    .partnershipText {
+        display: block;
+        width: initial;
+        padding: 0;
+    }
+
+    .partnershipImg {
+        display: block;
+        position: relative;
+        top: 4.4vw;
+        left: -1.5vw;
+        right: initial;
+    }
+
+    .partnershipImegBorder {
+        display: none;
+    }
+
+    .partnershipImgDesk {
+        display: none;
+    }
+
+    .partnershipImgMobile {
+        display: block;
+        width: 96vw;
+        height: 48.754vw;
+    }
+
+    .partnership>div>div>h2 {
+        font-size: 10.783vw;
+    }
+
+    .fonPartnershipText {
+        width: 76.2%;
+        height: 65.5%;
+        top: 29.18%;
+    }
+
+    .partnershipCard {
+        padding-top: 7vw;
+    }
+
+    .h2Mini, .h2MiniThree {
+        height: 5.314vw;
+    }
+
+    .cardView>div>h4 {
+        font-size: 4.492vw;
+    }
+
+    .cardViewFonHeadOne {
+        height: 58%;
+    }
+
+    .cardViewFonHeadTwo {
+        height: 56%;
+    }
+
+    .cardView>p {
+        font-size: 2.994vw;
+        padding-top: 1.85vw;
+    }
+
+    .paragraphImg {
+        width: 12.976vw;
+        top: 30vw;
+    }
+
+    .cardView>span {
+        font-size: 10.647vw;
+        top: 31.3vw;
+        right: 2vw;
+    }
+
+    .threeCards>.interview>p {
+        padding-top: 1.8vw;
+    }
+
+    .h2MiniFive {
+        height: 22.464vw;
+        top: 2.7vw;
+        left: 3vw;
+    }
+
+    .partnershipImg>div>h4 {
+        font-size: 12.077vw;
+        line-height: 101%;
+        width: 80.435vw;
+    }
+
+    .partnershipImg>span {
+        font-size: 10.652vw;
+        bottom: 3.9vw;
+        right: 0.6vw;
+    }
+
+    .partnershipImgFonText {
+        width: 55%;
+        top: 30%;
+    }
+
+
+    /*Условия*/
+    .conditions {
+        padding-left: 4.831vw;
+        padding-right: 4.831vw;
+        height: 309.662vw;
+    }
+
+    .conditionsMobileConfidentiality {
+        display: block;
+        padding-top: 13.6vw;
+    }
+
+    .conditions>h1 {
+        display: none;
+    }
+
+    .conditionsLeftBorder {
+        display: none;
+    }
+
+    .conditionsRightBorder {
+        display: none;
+    }
+
+    .conditionsLeft {
+        display: block;
+        width: initial;
+        padding: 0;
+        padding-top: 4vw;
+    }
+
+    .conditionsRight {
+        position: initial;
+        width: initial;
+        display: block;
+        padding-top: 2.3vw;
+    }
+
+    .conditionsLeftCard {
+        width: initial;
+        background: #f8f8f8;
+        box-shadow: initial;
+        margin-top: 0;
+    }
+
+    .conditionsRightCard {
+        width: initial;
+        background: #f8f8f8;
+        box-shadow: initial;
+        margin-top: 0;
+    }
+
+    .conditionsMobileConfidentialityText {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 8.454vw;
+        color: #F8F8F8;
+        line-height: 10.628vw;
+    }
+
+    .conditionsLeftFonTextHeadConf {
+        width: 97%;
+        top: 23%;
+        height: 51%;
+        background-color: #141414;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .conditionsMobileConfidentiality>p {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 4.348vw;
+        line-height: 4.75vw;
+        color: #141414;
+        padding-top: 4.4vw;
+    }
+
+    #conditionsMobileConfidentialityTextFirst {
+        padding-top: 4vw;
+    }
+
+    .conditionsLeft>div>h2 {
+        font-size: 8.454vw;
+        line-height: 10.628vw;
+    }
+
+    .conditionsLeftFonTextHead {
+        width: 73.6%;
+        height: 51%;
+        top: 23%;
+    }
+
+    .conditionsLeftText {
+        width: 86vw;
+    }
+
+    .conditionsLeftText>p {
+        font-size: 4.348vw;
+    }
+
+    .conditionsLeftNumber>span {
+        font-size: 11.869vw;
+        padding-left: 0;
+    }
+
+    #conditionsLeftNumberOne {
+        padding-top: 1vw;
+    }
+
+    #conditionsLeftNumberTwo {
+        padding-top: 1.95vw;
+    }
+
+    #conditionsLeftNumberThree {
+        padding-top: 4.15vw;
+    }
+
+    #conditionsLeftNumberFour {
+        padding-top: 1vw;
+    }
+
+    #conditionsLeftNumberFive {
+        padding-top: 4vw;
+        padding-bottom: 0;
+    }
+
+    #conditionsLeftTextOne {
+        padding-top: 8.3vw;
+        padding-left: 15vw;
+    }
+
+    #conditionsLeftTextTwo {
+        padding-top: 5.5vw;
+        padding-left: 15.2vw;
+    }
+
+    #conditionsLeftTextThree {
+        padding-top: 8.6vw;
+        padding-left: 15.2vw;
+    }
+
+    #conditionsLeftTextFour {
+        padding-top: 10.3vw;
+        padding-left: 15.2vw;
+    }
+
+    #conditionsLeftTextFive {
+        padding-top: 8vw;
+        padding-left: 15.2vw;
+    }
+
+    .conditionsRight>div>h2 {
+        font-size: 8.454vw;
+        line-height: 10.628vw;
+    }
+
+    .conditionsRightFonTextHead {
+        width: 55%;
+        height: 51%;
+        top: 23%;
+    }
+
+    .conditionsRightNumber>span {
+        font-size: 11.869vw;
+        padding: 0;
+    }
+
+    .conditionsRightNumber>span:first-child {
+        padding: 0;
+    }
+
+    #conditionsRightNumberOne {
+        padding-top: 1.55vw;
+    }
+
+    #conditionsRightNumberTwo {
+        padding-top: 6.65vw;
+    }
+
+    #conditionsRightNumberThree {
+        padding-top: 7.5vw;
+    }
+
+    #conditionsRightNumberFour {
+        padding-top: 7vw;
+    }
+
+    #conditionsRightNumberFive {
+        padding-top: 7vw;
+    }
+
+    .conditionsRightNumber>span:last-child {
+        padding: 0;
+    }
+
+    .conditionsRightText {
+        width: initial;
+    }
+
+    .conditionsRightText>p {
+        padding: 0;
+        font-size: 4.348vw;
+        line-height: 5.2vw;
+    }
+
+    #conditionsRightTextOne {
+        padding-top: 8.5vw;
+        padding-left: 15.4vw;
+    }
+
+    #conditionsRightTextTwo {
+        padding-top: 5.95vw;
+        padding-left: 15.4vw;
+    }
+
+    #conditionsRightTextThree {
+        padding-top: 11.25vw;
+        padding-left: 15.4vw;
+    }
+
+    #conditionsRightTextThree>br {
+        display: none;
+    }
+
+    #conditionsRightTextFour {
+        padding-top: 11.3vw;
+        padding-left: 15.4vw;
+    }
+
+    #conditionsRightTextFive {
+        padding-top: 10.85vw;
+        padding-left: 15.4vw;
+    }
+
+
+    /*Footer*/
+    .footerFon {
+        display: none;
+    }
+
+    .footerFonMobile {
+        display: block;
+        width: 100vw;
+        height: 177.778vw;
+    }
+
+    .footer>div>h2 {
+        font-size: 10.783vw;
+        line-height: 13.527vw;
+        color: #DBDDD8;
+    }
+
+    .h2Last {
+        top: 12.7vw;
+        left: 4.85vw;
+        height: 10.783vw;
+    }
+
+    .footerFonTextHead {
+        width: 101.5%;
+        height: 66%;
+        top: 28%;
+    }
+
+    .footerTextOne {
+        font-size: 4.348vw;
+        top: 37vw;
+        left: 5vw;
+        width: 58vw;
+    }
+
+    .fonBlackText {
+        color: #EDEDEB;
+        display: inline-block;
+        margin-top: 0.6vw;
+    }
+
+    .h2Mail {
+        height: 12.077vw;
+        top: 49vw;
+        left: 5vw;
+    }
+
+    .footer>.h2Mail>h2 {
+        font-size: 9.662vw;
+        line-height: 12.077vw;
+    }
+
+    .footerFonTextMail {
+        height: 69%;
+    }
+
+    .footerTextTwo {
+        font-size: 4.348vw;
+        top: 69vw;
+        left: 5vw;
+    }
+
+    .h2Telegram {
+        height: 12.077vw;
+        top: 74.8vw;
+        left: 5.2vw;
+    }
+
+    .footer>a>.h2Telegram>h2 {
+        font-size: 9.662vw;
+        line-height: 12.077vw;
+    }
+
+    .footerFonTextTelegram {
+        width: 98.5%;
+        height: 63%;
+        top: 21%;
+        left: 1%;
+    }
+
+    footer {
+        border: 0;
+        font-size: 2.489vw;
+        bottom: 3.55vw;
+    }
+
+}

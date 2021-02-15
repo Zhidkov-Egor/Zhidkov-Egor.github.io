@@ -1,0 +1,79 @@
+.project-descr {
+  padding-top: 57px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--smoky-white);
+    padding-bottom: 60px;
+  }
+
+  &__img {
+    flex: 1 1 50%;
+    margin-right: 20px;
+  }
+
+  &__info {
+    flex: 1 1 50%;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 23px;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 21px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--light-greenish-blue);
+  }
+
+  &__attributes-all {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-top: 1px solid var(--smoky-white);
+    padding-top: 30px;
+  }
+}
+
+.attributes-project {
+  margin: 0;
+  border: 1px solid var(--light-grey);
+  border-radius: 10px;
+  padding: 16px 20px;
+
+  &__item {
+    font-size: 14px;
+    line-height: 18px;
+
+    span {
+      margin-right: 5px;
+      color: var(--light-greenish-blue);
+    }
+  }
+
+  &__item:not(:last-child) {
+    border-bottom: 1px solid var(--smoky-white);
+    padding-bottom: 16px;
+  }
+
+  &__item:not(:first-child) {
+    padding-top: 13px;
+  }
+}
+
+.attributes-project-left {
+  flex: 0 0 61.2%;
+  margin-right: 3.2%;
+  max-width: 61.2%;
+}
+
+.attributes-project-right {
+  flex: 0 0 35.6%;
+  max-width: 35.6%;
+}

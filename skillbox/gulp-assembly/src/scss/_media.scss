@@ -1,0 +1,134 @@
+@media screen and (max-width: 1070px) {
+  .recording {
+    padding: 45px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .recording__description {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .section__title {
+    line-height: 53px;
+  }
+
+  .cost__wrapper {
+    flex-direction: column;
+  }
+
+  .cost__recording {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+
+  .recording__wrapper {
+    width: 100%;
+    max-width: 464px;
+  }
+
+  .recording__description {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__btn {
+    order: 2;
+    margin-bottom: 0;
+  }
+
+  .form__conditions {
+    order: 1;
+    margin-bottom: 45px;
+  }
+
+  .form__checkbox-text a {
+    display: inline;
+  }
+
+  .recording__аdvantages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 464px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .recording__description {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    padding: 0;
+  }
+
+  .section__title {
+    margin-top: 55px;
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 38px;
+    line-height: 44px;
+  }
+
+  .price__discount {
+    top: -9%;
+  }
+
+  .price {
+    padding-right: 25px;
+    padding-bottom: 40px;
+    padding-left: 25px;
+    min-height: auto;
+  }
+
+  .full span {
+    font-size: 36px;
+    line-height: 47px;
+  }
+
+  .deferred p {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .deferred span {
+    font-size: 56px;
+    line-height: 74px;
+  }
+
+  .first p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .first span {
+    font-size: 40px;
+    line-height: 53px;
+  }
+
+  .cost__recording {
+    align-items: flex-start;
+    padding-top: 40px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .recording__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}

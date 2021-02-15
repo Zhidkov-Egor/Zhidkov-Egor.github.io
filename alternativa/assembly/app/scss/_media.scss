@@ -1,0 +1,804 @@
+@media (max-width: 1610px) {
+  .partners__img {
+    flex-wrap: wrap;
+  }
+
+  .partner__img {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .card__header {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .card__text {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .card__quantity {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .card__price {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .card__order {
+    padding: 6px 55px;
+  }
+}
+
+@media (max-width: 1540px) {
+  .assortment__card {
+    flex: 0 0 22%;
+  }
+}
+
+@media (max-width: 1480px) {
+  .card__header {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .card__price {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 1380px) {
+  .equipment__item span {
+    font-size: 20px;
+  }
+
+  .card__order {
+    padding: 6px 45px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 125px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .section-header__h2 {
+    font-size: 75px;
+    line-height: 85px;
+  }
+
+  .catalog__fon-img-size {
+    min-height: auto;
+  }
+
+  .catalog__fon-img-size {
+    padding-bottom: 40px;
+  }
+
+  .equipment__item {
+    width: 100%;
+  }
+
+  .logo {
+    width: auto;
+  }
+
+  .header__phone {
+    width: auto;
+  }
+
+  .equipment__items-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .null {
+    display: none;
+  }
+
+  .assortment__card {
+    flex: 0 0 28%;
+  }
+
+  .assortment__card {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .contacts {
+    p {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+  .compressors__header,
+  .pumps__header,
+  .ventilation__header,
+  .steamTurbines__header,
+  .rest__header,
+  .leftovers__header {
+    .catalog__header {
+      .section-header__h2 {
+        font-size: 55px;
+        line-height: 70px;
+      }
+    }
+  }
+
+  .leftovers__header {
+    .catalog__header {
+      .section-header__h2 {
+        span {
+          font-size: 50px;
+          line-height: 70px;
+        }
+      }
+    }
+  }
+
+  .rest__header {
+    .catalog__header {
+      .section-header__h2 {
+        span {
+          font-size: 40px;
+          line-height: 58px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1188px) {
+  .assortment__card {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .language-selection__not-on-the-main {
+    bottom: 10px;
+    top: inherit;
+  }
+
+  .assortment__card {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .header__phone {
+    a {
+      font-size: 22px;
+      line-height: 27px;
+    }
+  }
+
+  .advantages__items {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    width: 45%;
+    margin-bottom: 25px;
+  }
+
+  .section-header__h2 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+
+@media (max-width: 1024px) {
+  //menu
+  .noScroll {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+  }
+
+  .menu-wrapper {
+    width: 25px;
+    height: 22px;
+    margin: 0;
+    z-index: 999;
+    padding: 0;
+    display: block;
+    order: 1;
+    margin-bottom: 5px;
+  }
+
+  .hamburger-menu {
+    position: relative;
+    transform: translateY(10px);
+    background: #ffffff;
+    transition: all 0ms 300ms;
+    width: 16px;
+    height: 2px;
+    float: right;
+  }
+
+  .hamburger-menu.animate {
+    background: rgba(255, 255, 255, 0);
+  }
+
+  .hamburger-menu:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 7px;
+    background: #ffffff;
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+      transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    width: 25px;
+    height: 2px;
+  }
+
+  .hamburger-menu:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 7px;
+    background: #ffffff;
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+      transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    width: 21px;
+    height: 2px;
+  }
+
+  .hamburger-menu.animate:after {
+    top: 0;
+    width: 25px;
+    transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1),
+      transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .hamburger-menu.animate:before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1),
+      transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #222222;
+    width: 320px;
+    height: 100vh;
+    z-index: 900;
+    transform: translateX(100%);
+    overflow: auto;
+    transition: transform 0.3s ease;
+    padding: 0;
+    padding-top: 140px;
+  }
+
+  .menu__box {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    overflow: auto;
+    height: 100%;
+  }
+
+  .menu__box > li + li {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .menu__item {
+    width: 300px;
+    text-align: center;
+  }
+
+  .animationMenu {
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+
+  //Other
+  .first-screen {
+    min-height: auto;
+  }
+
+  .header__phone {
+    width: auto;
+  }
+
+  .first-screen__header {
+    h1 {
+      font-size: 80px;
+      line-height: 100px;
+    }
+  }
+
+  .first-screen__text {
+    p {
+      font-size: 27px;
+      line-height: 34px;
+    }
+  }
+
+  .partner__img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 980px) {
+  .slider-case {
+    padding: 0;
+  }
+
+  .compressors__header,
+  .pumps__header,
+  .ventilation__header,
+  .steamTurbines__header,
+  .rest__header,
+  .leftovers__header {
+    .catalog__header {
+      .section-header__h2 {
+        font-size: 35px;
+        line-height: 45px;
+      }
+    }
+  }
+
+  .leftovers__header {
+    .catalog__header {
+      .section-header__h2 {
+        span {
+          font-size: inherit;
+          line-height: inherit;
+        }
+      }
+    }
+  }
+
+  .rest__header {
+    .catalog__header {
+      .section-header__h2 {
+        span {
+          font-size: 26px;
+          line-height: 41px;
+        }
+      }
+    }
+  }
+
+  .catalog__text-flex-margin {
+    margin-left: 140px;
+  }
+
+  .assortment__card {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 840px) {
+  .assortment__card {
+    flex: 0 0 45%;
+  }
+}
+
+@media (max-width: 820px) {
+  .first-screen__arrow-down {
+    display: block;
+  }
+
+  .first-screen__header {
+    h1 {
+      font-size: 60px;
+      line-height: 70px;
+    }
+  }
+
+  .first-screen__text {
+    p {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  .logo {
+    width: auto;
+  }
+
+  .about-us__text {
+    p {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  .about-us__header {
+    h2 {
+      font-size: 71px;
+      line-height: 80px;
+    }
+  }
+
+  .about-us__header {
+    height: auto;
+  }
+
+  .advantages__item {
+    p {
+      font-size: 21px;
+      line-height: 27px;
+    }
+  }
+
+  .catalog__text {
+    p {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    ul,
+    li {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  .assortment__text {
+    p {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    ul,
+    li {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .contacts__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .form__wrapper {
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .contacts__text {
+    width: 100%;
+    order: -1;
+    padding-left: 0;
+  }
+
+  .contacts__header {
+    margin-bottom: 20px;
+  }
+
+  .contacts__text-header {
+    margin: 0;
+  }
+
+  .rubber-products__header {
+    .section-header__h2 {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }
+
+  .compressors__header,
+  .pumps__header,
+  .ventilation__header,
+  .steamTurbines__header,
+  .rest__header,
+  .leftovers__header {
+    .catalog__header {
+      .section-header__h2 {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  .slider-arrows {
+    top: 20px;
+  }
+}
+
+@media (max-width: 639px) {
+  .advantages__item {
+    width: 100%;
+  }
+
+  .assortment__card {
+    flex: 0 0 40%;
+  }
+}
+
+@media (max-width: 620px) {
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .menu {
+    padding-top: 200px;
+  }
+
+  .first-screen__header {
+    h1 {
+      font-size: 45px;
+      line-height: 53px;
+    }
+  }
+
+  .first-screen__text {
+    p {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .first-screen__header {
+    padding-top: 100px;
+  }
+
+  .rubber-products__header {
+    .section-header__h2 {
+      padding-left: 100px;
+    }
+  }
+
+  .compressors__header,
+  .pumps__header,
+  .ventilation__header,
+  .steamTurbines__header,
+  .rest__header,
+  .leftovers__header {
+    .catalog__header {
+      .section-header__h2 {
+        font-size: 25px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .rest__header {
+    .catalog__header {
+      .section-header__h2 {
+        span {
+          font-size: 24px;
+          line-height: 36px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .section-header__h2 {
+    font-size: 55px;
+    line-height: 65px;
+  }
+
+  .partner__img {
+    img {
+      width: 100%;
+    }
+  }
+
+  #partner__img-one {
+    width: 50%;
+  }
+
+  .rubber-products__header {
+    .section-header__h2 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  .assortment__card {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+  .card__img {
+    border-radius: 10.52px;
+    display: inline-block;
+    max-width: 334px;
+    width: 100%;
+  }
+
+  .card__order {
+    padding: 6px 65px;
+  }
+}
+
+@media (max-width: 520px) {
+  .section-header__h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .advantages__header {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .first-screen__text {
+    p {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  .first-screen__btn {
+    a {
+      font-size: 14.365px;
+      line-height: 17px;
+      padding: 12px 50px;
+    }
+  }
+
+  .first-screen__header {
+    h1 {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+
+  .first-screen__text {
+    p {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  .about-us__text {
+    p {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  .about-us__header {
+    h2 {
+      font-size: 40px;
+      line-height: 49px;
+    }
+  }
+
+  .about-us__header {
+    height: 110px;
+  }
+
+  .equipment__item {
+    padding: 10px;
+
+    span {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+
+  .rubber-products__header {
+    .section-header__h2 {
+      font-size: 22px;
+      line-height: 28px;
+      padding-left: 65px;
+    }
+  }
+
+  .arrowBack {
+    top: 30px;
+    left: 20px;
+  }
+
+  .catalog__text {
+    p {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    ul,
+    li {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  .assortment__text {
+    p {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    ul,
+    li {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  .compressors__header,
+  .pumps__header,
+  .ventilation__header,
+  .steamTurbines__header,
+  .rest__header,
+  .leftovers__header {
+    .catalog__header {
+      .section-header__h2 {
+        font-size: 22px;
+        line-height: 28px;
+        padding-left: 65px;
+      }
+    }
+  }
+
+  .rest__header {
+    .catalog__header {
+      .section-header__h2 {
+        span {
+          font-size: 22px;
+          line-height: 31px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .section-header__h2 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .rest__header,
+  .leftovers__header {
+    .catalog__header {
+      .section-header__h2 {
+        span {
+          font-size: 17px;
+          line-height: 27px;
+          color: #ffffff;
+          -webkit-text-stroke: 0;
+        }
+      }
+    }
+  }
+
+  .catalog__text-flex-margin {
+    margin-left: 65px;
+  }
+}

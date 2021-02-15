@@ -1,0 +1,137 @@
+.project-gallery {
+  &__container {
+    border-bottom: 1px solid var(--smoky-white);
+    padding-top: 47px;
+    padding-bottom: 60px;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__slider {
+    padding-top: 50px;
+  }
+}
+
+.slider-project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__slide {
+    position: relative;
+    flex: 0 0 31.86%;
+  }
+
+  &__slide-big {
+    position: relative;
+    flex: 0 0 48.895%;
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__hover-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    margin-right: -50%;
+    padding-left: 71px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 46px;
+    color: var(--color-white);
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 51px;
+      height: 36px;
+      background-image: url(../img/hover-gallery.svg);
+      background-position: center;
+      background-size: 51px 36px;
+      background-repeat: no-repeat;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__hover-photo {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-radius: 10px;
+      background-color: transparent;
+      transition: 0.3s;
+    }
+  }
+
+  &__hover-photo:hover {
+    &::after {
+      background-color: rgba(220, 86, 86, 0.8);
+      transition: 0.3s;
+    }
+
+    .slider-project__hover-text {
+      opacity: 1;
+      transition: 0.3s;
+    }
+  }
+
+  &__points {
+    padding-top: 41px;
+  }
+}
+
+.points-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__point {
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    background-color: var(--smoky-white);
+    transition: 0.3s;
+    cursor: pointer;
+
+    &--active {
+      width: 16px;
+      height: 16px;
+      background-color: var(--light-carmine-pink);
+    }
+  }
+
+  &__point:hover {
+    width: 16px;
+    height: 16px;
+    background-color: var(--light-carmine-pink);
+    transition: 0.3s;
+  }
+
+  &__point:not(:last-child) {
+    margin-right: 20px;
+  }
+}

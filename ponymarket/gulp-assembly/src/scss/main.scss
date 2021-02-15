@@ -1,0 +1,1416 @@
+@import "mixins";
+@import "fonts";
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+body {
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-style: normal;
+  color: #333;
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-right: 7.24vw;
+  margin-left: 7.24vw;
+}
+
+.logo {
+  display: inline-flex;
+  margin-top: 1.979vw;
+  width: 25vw;
+}
+
+.logo img {
+  width: 2.109vw;
+}
+
+.logoText {
+  margin-left: 0.521vw;
+  padding-top: 0.521vw;
+}
+
+.logoText>h1,
+.logoText>span {
+  font-family: "AmaticSC";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.045vw;
+}
+
+.logoText>h1 {
+  line-height: 1.823vw;
+}
+
+.logoText>span {
+  display: block;
+  font-size: 0.795vw;
+}
+
+.underscore {
+  visibility: hidden;
+}
+
+nav {
+  margin-top: 2.917vw;
+  width: 50vw;
+}
+
+nav>ul {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+nav>ul>li {
+  margin-right: 3.604vw;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.146vw;
+}
+
+.headerGeoPhone {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2.708vw;
+  width: 23.833vw;
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.938vw;
+}
+
+.headerGeoPhone img {
+  width: 1.094vw;
+}
+
+.headerGeo {
+  margin-right: 0.42vw;
+  margin-left: 0.42vw;
+  padding-top: 0.4vw;
+}
+
+.headerPhone {
+  padding-top: 0.48vw;
+  width: 8.333vw;
+}
+
+.headerPhone>a {
+  border-left: 0.052vw solid #c4c4c4;
+  padding-left: 0.42vw;
+}
+
+.slider {
+  overflow: hidden;
+  margin-top: 1.979vw;
+  background-color: #cbbaff;
+}
+
+#img-mobile {
+  display: none;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+}
+
+.img-container img {
+  display: block;
+  width: 100%;
+  opacity: 1;
+  transition: 1s;
+  animation: 3s ease-in-out show;
+}
+
+.img-container>.slider-item {
+  position: relative;
+  width: 100%;
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.img-container>.slider-item>.descriptionSlide {
+  position: absolute;
+  left: 7.24vw;
+  top: 12.552vw;
+  opacity: 1;
+  transition: 1s;
+  animation: 3s ease-in-out showText;
+}
+
+@-webkit-keyframes showText {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showText {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.img-container>.slider-item>.descriptionSlide>span {
+  display: block;
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25vw;
+  color: #fff;
+}
+
+.img-container>.slider-item>.descriptionSlide>h3 {
+  margin-top: 0.521vw;
+  margin-bottom: 1.042vw;
+  width: 65%;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.865vw;
+  color: #fff;
+}
+
+.img-container>.slider-item>.descriptionSlide>p {
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.042vw;
+  color: #fff;
+}
+
+.img-container>.slider-item>.descriptionSlide>a {
+  display: inline-block;
+  margin-top: 2.344vw;
+  border: 0.104vw solid #fff;
+  border-radius: 5.208vw;
+  padding: 1.198vw 3.7vw;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.042vw;
+  color: #fff;
+}
+
+.prev {
+  position: absolute;
+  right: 10.677vw;
+  top: 27.604vw;
+  width: 2.604vw;
+  cursor: pointer;
+}
+
+.prev img {
+  width: 2.604vw;
+}
+
+.next {
+  position: absolute;
+  right: 7.24vw;
+  top: 27.604vw;
+  width: 2.604vw;
+  cursor: pointer;
+}
+
+.next img {
+  width: 2.604vw;
+}
+
+.slider-dots {
+  position: absolute;
+  top: 45.323vw;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  display: inline-block;
+  margin-left: 0.781vw;
+  border: 0.156vw solid #fff;
+  border-radius: 50%;
+  width: 0.69vw;
+  height: 0.69vw;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.dot-active {
+  background-color: transparent;
+}
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6.719vw;
+  margin-bottom: 7.24vw;
+  padding-right: 7.24vw;
+  padding-left: 7.24vw;
+}
+
+.advantages>div>span {
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25vw;
+  color: #cbbaff;
+}
+
+.advantages>div>p {
+  margin-top: 1.042vw;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.25vw;
+}
+
+.advantagesOne {
+  width: 21.406vw;
+}
+
+.advantagesTwo {
+  width: 16.667vw;
+}
+
+.advantagesThree {
+  width: 16.042vw;
+}
+
+.advantagesFour {
+  width: 13.385vw;
+}
+
+.catalog {
+  margin-top: 6.042vw;
+}
+
+.catalog>p {
+  margin-left: 7.24vw;
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.729vw;
+  letter-spacing: 0.2em;
+  color: #cbbaff;
+}
+
+.catalogAllCategory {
+  display: -webkit-box;
+  overflow: hidden;
+  padding-left: 7.24vw;
+}
+
+.catalog>h2 {
+  margin-top: 1.1vw;
+  margin-bottom: 2.604vw;
+  margin-left: 7.24vw;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5vw;
+}
+
+.catalogAll {
+  position: relative;
+  margin-right: 1.042vw;
+}
+
+.catalogAll>picture>img {
+  width: 27.813vw;
+}
+
+.catalogAll>.catalogDescription {
+  position: absolute;
+  top: 2.708vw;
+  width: 100%;
+}
+
+.catalogDescription img {
+  width: 1.875vw;
+}
+
+.catalogAll>.catalogDescription>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.catalogAll>.catalogDescription>div>p {
+  padding-left: 1.719vw;
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.938vw;
+  opacity: 0.5;
+}
+
+.catalogAll>.catalogDescription>div>span {
+  padding-right: 2.083vw;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.563vw;
+}
+
+.catalogAll>div>h3 {
+  padding-left: 1.719vw;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.563vw;
+  color: #fff;
+}
+
+.catalogAll>div>a {
+  display: block;
+  margin-top: 27.604vw;
+  padding-left: 1.719vw;
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.146vw;
+  color: #fff;
+}
+
+.catalogAll>div>a>picture {
+  margin-left: 1.563vw;
+}
+
+.catalogAll>div>a>picture>img {
+  margin-bottom: -0.078vw;
+}
+
+.company {
+  display: flex;
+  margin-top: 15.104vw;
+  margin-right: 7.24vw;
+  margin-left: 7.24vw;
+}
+
+.company img {
+  width: 49vw;
+}
+
+.companyDescription {
+  margin-top: 5.208vw;
+  margin-left: 8.281vw;
+  width: 49vw;
+}
+
+.companyDescription>span {
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.729vw;
+  color: #cbbaff;
+}
+
+.companyDescription>h2 {
+  margin-top: 0.781vw;
+  margin-bottom: 1.563vw;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5vw;
+}
+
+.companyDescription>p {
+  width: 100%;
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.146vw;
+  line-height: 132%;
+}
+
+.price {
+  position: relative;
+  margin-top: 8.094vw;
+  width: 100%;
+  color: #fff;
+}
+
+.price img {
+  width: 100%;
+}
+
+.priceDescription {
+  position: absolute;
+  left: 7.24vw;
+  top: 13vw;
+}
+
+.priceDescription>h2 {
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.198vw;
+}
+
+.priceDescription>p {
+  margin-top: 0.781vw;
+  margin-bottom: 1.302vw;
+  width: 60%;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.344vw;
+}
+
+.priceDescription>a {
+  display: inline-block;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.042vw;
+}
+
+.lookPrice,
+.lookTraining {
+  border: 0.104vw solid #fff;
+  border-radius: 5.961vw;
+  padding: 1.354vw 2.604vw;
+}
+
+.lookPrice {
+  color: #cbbaff;
+  background-color: #fff;
+}
+
+.lookTraining {
+  margin-left: 1.875vw;
+  color: #fff;
+}
+
+.scoreMap {
+  position: relative;
+  margin-top: 9.792vw;
+  padding-right: 7.24vw;
+  padding-left: 7.24vw;
+}
+
+.fullMap {
+  width: 85.521vw;
+}
+
+.scoreMap .map {
+  width: 100%;
+}
+
+.scoreMap>h2 {
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.729vw;
+  letter-spacing: 0.2em;
+  color: #cbbaff;
+}
+
+.scoreMap>p {
+  margin-top: 0.781vw;
+  margin-bottom: 3.385vw;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5vw;
+}
+
+.scoreMap .pointSpb {
+  position: absolute;
+  left: 19.59vw;
+  top: 21.87vw;
+  width: 2.583vw;
+}
+
+.scoreMap .pointSpbText {
+  position: absolute;
+  left: 19.95vw;
+  top: 19.35vw;
+  width: 9.782vw;
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.scoreMap .pointPetrozav {
+  position: absolute;
+  left: 22.66vw;
+  top: 21.95vw;
+  width: 2.083vw;
+}
+
+.scoreMap .pointPetrozavText {
+  position: absolute;
+  left: 22.8vw;
+  top: 19.15vw;
+  width: 9.782vw;
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.scoreMap .pointVelNovgorod {
+  position: absolute;
+  left: 19vw;
+  top: 25.45vw;
+  width: 2.083vw;
+}
+
+.scoreMap .pointVelNovgorodText {
+  position: absolute;
+  left: 19.15vw;
+  top: 22.6vw;
+  width: 9.782vw;
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.scoreMap .pointCherepovec {
+  position: absolute;
+  left: 22.75vw;
+  top: 25.7vw;
+  width: 2.083vw;
+}
+
+.scoreMap .pointCherepovecText {
+  position: absolute;
+  left: 22.9vw;
+  top: 22.9vw;
+  width: 9.782vw;
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.scoreMap .pointTver {
+  position: absolute;
+  left: 22.4vw;
+  top: 27.8vw;
+  width: 2.083vw;
+}
+
+.scoreMap .pointTverText {
+  position: absolute;
+  left: 22.555vw;
+  top: 24.99vw;
+  width: 9.782vw;
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.scoreMap .pointPskov {
+  position: absolute;
+  left: 15.8vw;
+  top: 28.54vw;
+  width: 2.083vw;
+}
+
+.scoreMap .pointPskovText {
+  position: absolute;
+  left: 15.95vw;
+  top: 25.7vw;
+  width: 9.782vw;
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.scoreMap .pointBryansk {
+  position: absolute;
+  left: 14.4vw;
+  top: 35.3vw;
+  width: 2.083vw;
+}
+
+.scoreMap .pointBryanskText {
+  position: absolute;
+  left: 14.55vw;
+  top: 32.55vw;
+  width: 9.782vw;
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.scoreMap .pointVologda {
+  position: absolute;
+  left: 27.35vw;
+  top: 28.7vw;
+  width: 2.083vw;
+}
+
+.scoreMap .pointVologdaText {
+  position: absolute;
+  left: 27.5vw;
+  top: 25.85vw;
+  width: 9.782vw;
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.scoreMap .pointSiktivkar {
+  position: absolute;
+  left: 30.94vw;
+  top: 27.46vw;
+  width: 2.083vw;
+}
+
+.scoreMap .pointSiktivkarText {
+  position: absolute;
+  left: 31.1vw;
+  top: 24.65vw;
+  width: 9.782vw;
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.scoreMap .pointArhangelsk {
+  position: absolute;
+  left: 30.2vw;
+  top: 22.2vw;
+  width: 2.083vw;
+}
+
+.scoreMap .pointArhangelskText {
+  position: absolute;
+  left: 30.35vw;
+  top: 19.4vw;
+  width: 9.782vw;
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.scoreMap .pointMurmansk {
+  position: absolute;
+  left: 29.84vw;
+  top: 17.1vw;
+  width: 2.083vw;
+}
+
+.scoreMap .pointMurmanskText {
+  position: absolute;
+  left: 29.98vw;
+  top: 14.3vw;
+  width: 9.782vw;
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.scoreMap .pointBlagovehensk {
+  position: absolute;
+  left: 75.06vw;
+  top: 45.3vw;
+  width: 2.083vw;
+}
+
+.scoreMap .pointBlagovehenskText {
+  position: absolute;
+  left: 75.2vw;
+  top: 42.5vw;
+  width: 9.782vw;
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.descriptionPointSpb {
+  padding-right: 7.24vw;
+  padding-left: 7.24vw;
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.938vw;
+}
+
+#pointTextVis {
+  z-index: 3;
+  opacity: 1;
+}
+
+#mapTexMobile,
+.lisrCity {
+  display: none;
+}
+
+.request {
+  position: relative;
+  margin-top: 7.813vw;
+}
+
+.request img {
+  display: block;
+  width: 100%;
+}
+
+.requestForm {
+  position: absolute;
+  left: 7.24vw;
+  top: 6.094vw;
+}
+
+.requestForm>h2 {
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.938vw;
+  color: #fff;
+}
+
+.requestForm>p {
+  margin-top: 0.781vw;
+  margin-bottom: 1.563vw;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.875vw;
+  color: #fff;
+}
+
+.requestForm>form>div {
+  display: flex;
+  margin-bottom: 1.563vw;
+}
+
+.requestForm>form input,
+.requestForm>form textarea {
+  border: 0.052vw solid #fff;
+  border-radius: 0.521vw;
+  padding-top: 1.458vw;
+  padding-bottom: 1.458vw;
+  padding-left: 0.781vw;
+  width: 20.833vw;
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.938vw;
+  background-color: #fff;
+}
+
+.name,
+.phone {
+  margin-right: 3.281vw;
+}
+
+.requestForm>form>.formFileButton>.uploadFile {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  width: 13.385vw;
+  height: 3.646vw;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.938vw;
+  color: #fff;
+}
+
+.requestForm>form>.formFileButton>.uploadFile>label {
+  position: absolute;
+  border: 0.104vw solid #fff;
+  border-radius: 5.208vw;
+  padding: 1.25vw 2.76vw;
+  width: 8.2vw;
+  text-align: center;
+  cursor: pointer;
+}
+
+.requestForm>form>.formFileButton>.uploadFile>.file {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  padding: 0;
+  width: 1vw;
+  height: 1vw;
+  opacity: 0;
+}
+
+.requestForm>form .formFileButton>button {
+  margin-left: 2.5vw;
+  border: 0.052vw solid #fff;
+  border-radius: 5.208vw;
+  padding: 1.302vw 4.271vw;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 0.938vw;
+  color: #cbbaff;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #f2f2f2;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.177vw 7.813vw 3.698vw 7.24vw;
+}
+
+.logoFooter {
+  display: inline-flex;
+}
+
+.logoFooter>picture>img {
+  width: 2.135vw;
+}
+
+.logoTextFooter {
+  margin-left: 0.521vw;
+  padding-top: 0.521vw;
+}
+
+.logoTextFooter>h1,
+.logoTextFooter>span {
+  font-family: "AmaticSC";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.547vw;
+}
+
+.logoTextFooter>h1 {
+  line-height: 1.563vw;
+}
+
+.logoTextFooter>span {
+  display: block;
+  font-size: 0.625vw;
+}
+
+.footerMenu {
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.042vw;
+  opacity: 0.5;
+}
+
+.footerMenu>ul {
+  margin-top: 1.563vw;
+}
+
+.footerMenu>ul>li {
+  margin-bottom: 0.781vw;
+  font-weight: 600;
+}
+
+.footerContacts {
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.042vw;
+  opacity: 0.5;
+}
+
+.footerContacts>div>p {
+  margin-bottom: 0.781vw;
+  font-weight: 600;
+}
+
+.footerContacts>div {
+  margin-top: 1.563vw;
+}
+
+.footerSubscribe>h3 {
+  margin-bottom: 1.563vw;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.042vw;
+  opacity: 0.5;
+}
+
+.emailTwo {
+  border: 0.052vw solid #fff;
+  border-radius: 0.521vw 0 0 0.521vw;
+  padding-top: 1.302vw;
+  padding-bottom: 1.302vw;
+  padding-left: 0.781vw;
+  width: 23.958vw;
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.938vw;
+}
+
+.formTwo {
+  display: flex;
+}
+
+.formTwo>button {
+  border: 0;
+  border-radius: 0 0.521vw 0.521vw 0;
+  padding: 1.302vw;
+  background-color: #cbbaff;
+  cursor: pointer;
+}
+
+.arrowFormTwoPrime {
+  display: flex;
+  align-items: center;
+}
+
+.arrowFormTwo {
+  width: 0.729vw;
+}
+
+.footerSubscribe>p {
+  padding-top: 1.302vw;
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.938vw;
+  opacity: 0.5;
+}
+
+.arrowUp {
+  margin-top: 2.656vw;
+  width: 1.979vw;
+}
+
+.catalogFooter {
+  margin-top: 9.01vw;
+}
+
+.catalogAllStyle {
+  margin-top: 3.906vw;
+}
+
+.catalogAllStyleHeader {
+  position: relative;
+  padding-right: 7.24vw;
+  padding-left: 7.24vw;
+}
+
+.catalogAllStyleHeader>a {
+  position: absolute;
+  top: 0.875vw;
+  border-radius: 50%;
+  padding: 0.938vw 1.198vw 0.938vw 1.042vw;
+  background-color: #cbbaff;
+}
+
+.catalogAllStyleHeader>a picture {
+  display: block;
+}
+
+.catalogAllStyleHeader>a img {
+  display: block;
+  width: 0.573vw;
+}
+
+.catalogAllStyleHeader>div {
+  text-align: center;
+}
+
+.catalogAllStyleHeader>div>p {
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.729vw;
+  letter-spacing: 0.2em;
+  color: #cbbaff;
+}
+
+.catalogAllStyleHeader>div>h2 {
+  margin-top: 0.521vw;
+  margin-bottom: 0.521vw;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5vw;
+}
+
+.catalogAllStyleCard {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.344vw;
+  padding-right: 7.24vw;
+  padding-left: 7.24vw;
+}
+
+.catalogNo {
+  visibility: hidden;
+}
+
+.tshirt {
+  position: relative;
+  display: inline-block;
+}
+
+.tshirt img {
+  display: block;
+  border-radius: 0.521vw;
+  width: 27.813vw;
+}
+
+.tshirt>h3 {
+  margin-top: 1.354vw;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.667vw;
+}
+
+.tshirt>p {
+  margin-top: 0.26vw;
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.042vw;
+  color: #cbbaff;
+}
+
+.seePrice {
+  position: absolute;
+  border-radius: 0 0 0.521vw 0.521vw;
+  padding: 1.406vw 9.6vw;
+  width: 8.6vw;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 0.938vw;
+  color: #fff;
+  background-color: #cbbaff;
+  transform: translateY(101%);
+  transition: 0.2s linear;
+}
+
+.tshirt:hover .seePrice {
+  transform: translateY(0);
+}
+
+.hidden {
+  position: absolute;
+  top: 26.57vw;
+  overflow: hidden;
+  width: 27.813vw;
+  height: 3.906vw;
+}
+
+.training {
+  padding-top: 5.469vw;
+  padding-right: 7.24vw;
+  padding-left: 7.24vw;
+}
+
+.trainingImg {
+  width: 83.521vw;
+}
+
+.trainingHeadText {
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5vw;
+}
+
+.trainingText {
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.146vw;
+}
+
+.trainingHeaderText {
+  margin-top: 1.302vw;
+  margin-bottom: 2.604vw;
+}
+
+.trainingDescriptionText {
+  margin-top: 0.417vw;
+  margin-bottom: 1.927vw;
+}
+
+.training img {
+  margin-bottom: 2.656vw;
+}
+
+.trainingLink {
+  margin-top: 5.208vw;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.042vw;
+  text-align: center;
+}
+
+.trainingLinkPrice {
+  margin-right: 0.938vw;
+  border: 0.13vw solid #cbbaff;
+  border-radius: 5.961vw;
+  padding: 1.354vw 2.604vw;
+  color: #fff;
+  background-color: #cbbaff;
+}
+
+.trainingLinkBack {
+  margin-left: 0.938vw;
+  border: 0.13vw solid #cbbaff;
+  border-radius: 5.961vw;
+  padding: 1.354vw 3.073vw;
+  color: #cbbaff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.trainingDownloadPrice {
+  text-decoration: underline;
+  color: #cbbaff;
+}
+
+.progress {
+  position: relative;
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1vw;
+  margin-left: 1.5vw;
+  border-radius: 5.208vw;
+  padding: 0 0.26vw;
+  width: 15.042vw;
+  height: 1.5vw;
+  background: #fff;
+}
+
+.progressvis {
+  display: block;
+}
+
+.progress-value {
+  margin-top: 0.25vw;
+  border-radius: 5.208vw;
+  width: 0;
+  height: 1vw;
+  box-shadow: 0 0.521vw 2.083vw -0.521vw #fff;
+  background: #cbbaff;
+  animation: 0.7s infinite load;
+}
+
+@-webkit-keyframes load {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.list-files {
+  position: absolute;
+  left: 1.4vw;
+  top: 4vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.list-files>li {
+  display: inline;
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.7vw;
+}
+
+.privacy {
+  &__container {
+    margin-top: 1.5vw;
+    margin-right: 14.48vw;
+    margin-left: 14.48vw;
+  }
+
+  &__heading {
+    margin-bottom: 1.5vw;
+    font-family: "Gilroy";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2vw;
+  }
+
+  &__title {
+    margin-bottom: 1.5vw;
+    font-family: "Gilroy";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5vw;
+  }
+
+  &__text {
+    margin-bottom: 1.5vw;
+    font-family: "Gilroy";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1vw;
+
+    li {
+      margin-bottom: 0.5vw;
+    }
+  }
+
+  &__link {
+    &--form {
+      font-family: "Gilroy";
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1vw;
+      text-decoration: underline;
+      color: #fff;
+    }
+  }
+}
+
+.footerSubscribe>.public-offer {
+  padding-top: 0.5vw;
+}

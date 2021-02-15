@@ -1,0 +1,251 @@
+.section-wrapper.presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & h1 {
+        text-align: center;
+        z-index: 2;
+    }
+
+    & .section__content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 50%;
+        margin-left: 0%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        & p.section_text {
+            margin: 1rem 0;
+        }
+
+        & .action-button,
+        & h2,
+        & h3,
+        & p {
+            display: block;
+            text-align: left;
+        }
+    }
+
+    & .video-block {
+        right: 0;
+        margin-top: -10rem;
+
+        & video,
+        & img {
+            width: 100%;
+        }
+
+        &.mobile {
+            display: none;
+        }
+    }
+}
+
+.section-wrapper.shops {
+
+    & .section__content {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 5vw;
+    }
+
+    & .shops-images {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        min-height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        & .images__block {
+            width: 100%;
+            position: relative;
+
+            & .block_text {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                box-sizing: border-box;
+                z-index: 3;
+            }
+
+            & video,
+            & img {
+                width: 100%;
+                top: 0;
+            }
+        }
+    }
+}
+
+.section-wrapper.our-works {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.section-wrapper.preview-block {
+    display: flex;
+    overflow-y: hidden;
+
+    z-index: 5;
+
+    & .preview-block__bg {
+        width: 100%;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+
+    &.right-content {
+        & .section__content {
+            max-width: 60%;
+        }
+    }
+
+    & .section__content {
+
+        & h2,
+        & ul,
+        & p {
+            opacity: 1;
+        }
+
+        & ul li,
+        & p {
+            font-size: 2rem;
+        }
+    }
+
+    &.first {
+        justify-content: flex-start;
+
+        & ul li,
+        & p {
+            text-align: left;
+        }
+
+        & ul {
+            margin: 2.6rem 0 2.5rem 0;
+        }
+    }
+
+    &.second {
+        justify-content: flex-end;
+
+        & ul li,
+        & p,
+        & h3 {
+            text-align: right;
+        }
+
+        & ul {
+            margin: 2.4rem 0 5rem 0;
+        }
+    }
+}
+
+.section-wrapper.video-block-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    // Video on left side
+    &.left {
+        & .section__content {
+            max-width: 45%;
+            margin: 0 2.5% 0 auto;
+
+            & h2,
+            & h3,
+            & p {
+                text-align: right;
+            }
+        }
+
+        & .video-block {
+            left: 0;
+        }
+    }
+
+    & .section__content {
+        z-index: 5;
+    }
+
+    // Video on right side
+    &.right {
+        & .section__content {
+            max-width: 48%;
+            margin: 0 auto 0 2.5%;
+
+            & h2,
+            & h3,
+            & p {
+                text-align: left;
+            }
+        }
+
+        & .video-block {
+            right: 0;
+        }
+    }
+}
+
+.section-wrapper.collaborations {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    & .section__images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & .image-block {
+        overflow: hidden;
+        position: relative;
+
+        &__description {
+            background: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            color: #fff;
+            z-index: 7;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            font-family: $object_sans;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            padding: 1rem;
+            box-sizing: border-box;
+
+            opacity: 0;
+            transition: .3s;
+        }
+
+        &:hover {
+            & .image-block__description {
+                opacity: 1;
+            }
+
+        }
+    }
+}

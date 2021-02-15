@@ -1,0 +1,227 @@
+.footer {
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  margin-top: 120px;
+  background-color: var(--medium-persian-blue);
+
+  &__subtitle {
+    margin: 29px 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: var(--smoky-white);
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #367CB6;
+    padding-top: 121px;
+    padding-bottom: 66px;
+
+    &-right,
+    &-left {
+      flex: 0 0 17.6%;
+    }
+  }
+
+  &__phone {
+    position: relative;
+    display: block;
+    margin-bottom: 25px;
+    padding-left: 28px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: var(--color-white);
+    transition: color 0.3s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 18px;
+      height: 18px;
+      background-image: url(../img/phone.svg);
+      background-position: center;
+      background-size: 18px 18px;
+      background-repeat: no-repeat;
+      transform: translateY(-50%);
+    }
+
+    &:hover {
+      color: var(--aquamarine-crayola);
+      transition: color 0.3s;
+    }
+  }
+
+  &__call {
+    position: relative;
+    display: block;
+    margin-bottom: 55px;
+    border-radius: 10px;
+    padding: 16px 50px 16px 30px;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-white);
+    background-color: var(--light-carmine-pink);
+    transition: background-color 0.3s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      width: 25px;
+      height: 8px;
+      background-image: url(../img/arrow.svg);
+      background-position: center;
+      background-size: 25px 8px;
+      background-repeat: no-repeat;
+      transform: translateY(-50%);
+    }
+
+    &:hover {
+      background-color: var(--aquamarine-crayola);
+      transition: background-color 0.3s;
+    }
+  }
+
+  &__copyright {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: end;
+    color: var(--aquamarine-crayola);
+  }
+
+  &__bottom {
+    padding-top: 58px;
+    padding-bottom: 55px;
+
+    &-text {
+      margin: 0;
+      padding: 0;
+      font-size: 12px;
+      line-height: 24px;
+      color: var(--aquamarine-crayola);
+    }
+
+    &-text:not(:last-child) {
+      margin-bottom: 23px;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    svg {
+      fill: var(--aquamarine-crayola);
+      transition: fill 0.5s;
+    }
+
+    &:hover {
+      svg {
+        fill: var(--color-white);
+        transition: fill 0.5s;
+      }
+    }
+  }
+
+  &__link:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  &__vk {
+    svg{
+      width: 25.6px;
+      height: 16px;
+    }
+  }
+
+  &__fb {
+    svg{
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &__inst {
+    svg{
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &__youtube {
+    svg {
+      width: 23.77px;
+      height: 16px;
+    }
+  }
+}
+
+.footer-menu {
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 0 30px;
+
+  &__items {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+
+  &__item {
+    margin-right: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: var(--smoky-white);
+  }
+}
+
+.footer-submenu__items {
+  margin: 0;
+  margin-top: 17px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: var(--aquamarine-crayola);
+}
+
+.footer-submenu__link {
+  position: relative;
+  padding-right: 35px;
+  color: inherit;
+  transition: color 0.3s;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 25px;
+    height: 8px;
+    background-image: url(../img/arrow.svg);
+    background-position: center;
+    background-size: 25px 8px;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: opacity 0.3s;
+  }
+}
+
+.footer-submenu__item:hover {
+  color: var(--color-white);
+  transition: color 0.3s;
+
+  .footer-submenu__link::after {
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+}

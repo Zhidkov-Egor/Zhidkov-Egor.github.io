@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>VSRAP</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+
+    <link rel="icon" href="./assets/images/logo.jpg" />
+    <link rel="apple-touch-icon" href="./assets/images/logo.jpg" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="theme-color" content="#080808" />
+    <meta name="description" content="VSRAP" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
+        integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
+        crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
+        integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header" id="header">
+            <div class="mobile-header">
+                <a href="#main" class="js-scroll-link links_item img-link">
+                    <img src="./assets/images/logo.svg" alt="logo">
+                </a>
+                <button id="burger">
+                    <img src="./assets/images/burger.png" />
+                </button>
+            </div>
+            <div class="header__links links container" id="mobile-menu">
+                <div class="mobile-popup__header">
+                    <a href="#main" class="js-scroll-link img-link">
+                        <img src="./assets/images/logo.svg" alt="logo">
+                    </a>
+                    <button class="close-menu js-close-menu">
+                        <img src="./assets/images/close.png" alt="close-image">
+                    </button>
+                </div>
+                <div class="links__same-site ">
+                    <a href="#main" class="js-scroll-link links_item img-link logo-4k">
+                        <img src="./assets/images/logo.svg" alt="logo">
+                    </a>
+                    <a href="#collaborations" class="js-scroll-link links_item section_text small">Коллаборации</a>
+                    <a href="#shops" class="js-scroll-link links_item section_text small">Магазины</a>
+                    <a href="#site" class="js-scroll-link links_item section_text small">Товары</a>
+                    <a href="#works"
+                        class="js-scroll-link links_item item_main_site section_text small">Производство</a>
+                </div>
+                <a href="https://vsrap.shop/" class="links_item section_text small prime-shop" target="_blank">Основной
+                    сайт
+                    vsrap.shop</a>
+
+
+                <div class="mobile-info">
+                    <p class="links_item section_text">wear@vsrap.ru</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="fullpage">
+
+        <section class="section first-screen">
+            <div class="video__all video-bg first-screen__bg">
+                <video width="100%" height="auto" data-autoplay loop muted
+                    poster="./assets/images/first-screen-bg.png">
+                    <source src="./assets/videos/first-screen-video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="section-wrapper presentation">
+
+                <div class="section__content container">
+
+                    <h2 class="first-screen__title"><span class="first-screen__title--font">VSRAP SHOP -</span>
+                        Крупнейшая в СНГ площадка по производству и реализции мерча артистов и блогеров.
+                    </h2>
+
+                    <p class="first-screen__text">
+                        Делать мерч с нами выгодней из-за отлаженной системы производства и продаж. Благодаря этому наши
+                        лучшие дропы расходятся тиражами в тысячи штук. Подобных показателей невозможно добиться без
+                        собственного производства и оффлайн-продаж.
+                    </p>
+                    <p class="first-screen__text">
+                        Все вещи мы шьём в Санкт-Петербурге по собственному дизайну и крою. Наши розничные магазины
+                        находятся в центре Москвы и Питера, а сайт посещает 300 000 человек в месяц.
+                    </p>
+                </div>
+
+                <div class="first-screen__video-block desktop">
+                    <div class="video">
+                        <a class="video__link" href="https://youtu.be/K5LASyDupWA">
+                            <picture>
+                                <source srcset="https://i.ytimg.com/vi_webp/K5LASyDupWA/maxresdefault.webp"
+                                    type="image/webp">
+                                <img class="video__media" src="https://i.ytimg.com/vi/K5LASyDupWA/maxresdefault.jpg"
+                                    alt="VSRAP Cypher #1 — DK aka LilDanil x СЛАВА КПСС x CMH x ЗАМАЙ 18+">
+                            </picture>
+                        </a>
+                        <button class="video__button" aria-label="Запустить видео">
+                            <svg width="68" height="48" viewbox="0 0 68 48">
+                                <path class="video__button-shape"
+                                    d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z">
+                                </path>
+                                <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <h1 class="section_title container ">VSRAPSHOP<span>2020</span></h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="section collaboration__section">
+            <div class="section-wrapper collaborations">
+                <div class="section__content container collaborations__content">
+                    <h2 class="section_title collaborations__title heading">С нами уже самые топовые инфлюенсеры</h2>
+                    <p class="section_text collaborations__text">Присоединяясь к нам, вы сразу попадаете в крутую
+                        компанию, а ваши товары
+                        получают доступ к огромнейшей аудитории всех наших блогеров.</p>
+                </div>
+                <div class="section__images">
+                    <div class="collaborations__row-1">
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/CMH-c32930023" target="_blank">
+                                <img src="./assets/images/collaborations-1.jpg" alt="CMH">
+                                <div class="image-block__description">CMH</div>
+                            </a>
+                        </div>
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/mar-maries-c43365174" target="_blank">
+                                <img src="./assets/images/collaborations-2.jpg" alt="mar.maries">
+                                <div class="image-block__description">mar.maries</div>
+                            </a>
+                        </div>
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/Russian-Village-Boys-c57966151" target="_blank">
+                                <img src="./assets/images/collaborations-3.jpg" alt="Russian Village Boys">
+                                <div class="image-block__description">Russian Village Boys</div>
+                            </a>
+                        </div>
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/%D0%94%D0%B0%D1%88%D0%B0-%D0%9A%D0%B0%D0%BF%D0%BB%D0%B0%D0%BD-c41541040"
+                                target="_blank">
+                                <img src="./assets/images/collaborations-4.jpg" alt="Даша Каплан">
+                                <div class="image-block__description">Даша Каплан</div>
+                            </a>
+                        </div>
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/%D0%9A%D1%83%D0%B7%D1%8C%D0%BC%D0%B0-c34650169" target="_blank">
+                                <img src="./assets/images/collaborations-5.jpg" alt="Кузьма">
+                                <div class="image-block__description">Кузьма</div>
+                            </a>
+                        </div>
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/Анастасия-Шпагина-c41343064" target="_blank">
+                                <img src="./assets/images/collaborations-6.jpg" alt="Анастасия Шпагина">
+                                <div class="image-block__description">Анастасия Шпагина</div>
+                            </a>
+                        </div>
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/%D0%9F%D1%80%D0%B8%D1%8F%D1%82%D0%BD%D1%8B%D0%B9-%D0%98%D0%BB%D1%8C%D0%B4%D0%B0%D1%80-c36343438"
+                                target="_blank">
+                                <img src="./assets/images/collaborations-7.jpg" alt="Приятный Ильдар">
+                                <div class="image-block__description">Приятный Ильдар</div>
+                            </a>
+                        </div>
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/%D0%AE%D0%BB%D0%B8%D0%BA-c32930026" target="_blank">
+                                <img src="./assets/images/collaborations-8.jpg" alt="Юлик">
+                                <div class="image-block__description">Юлик</div>
+                            </a>
+                        </div>
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/Delorenzy-c46756189">
+                                <img src="./assets/images/collaborations-9.jpg" alt="Delorenzy" target="_blank">
+                                <div class="image-block__description">Delorenzy</div>
+                            </a>
+                        </div>
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/%D0%90%D0%BD%D1%82%D0%BE%D0%BD-%D0%92%D0%BB%D0%B0%D1%81%D0%BE%D0%B2-c56725778"
+                                target="_blank">
+                                <img src="./assets/images/collaborations-10.jpg" alt="Антон Власов">
+                                <div class="image-block__description">Антон Власов</div>
+                            </a>
+                        </div>
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/%D0%94%D0%B5%D0%BD-%D0%A8%D0%BC%D0%B0%D0%BB%D1%8C%D1%86-c34294669"
+                                target="_blank">
+                                <img src="./assets/images/collaborations-11.jpg" alt="Ден Шмальц">
+                                <div class="image-block__description">Ден Шмальц</div>
+                            </a>
+                        </div>
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/%D0%90%D0%BD%D1%82%D0%B8%D1%85%D0%B0%D0%B9%D0%BF-c37920955"
+                                target="_blank">
+                                <img src="./assets/images/collaborations-12.jpg" alt="Слава КПСС">
+                                <div class="image-block__description">Слава КПСС</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="collaborations__row-2">
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/Czar-c42669257" target="_blank">
+                                <img src="./assets/images/collaborations-13.jpg" alt="Czar">
+                                <div class="image-block__description">Czar</div>
+                            </a>
+                        </div>
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/Dropdead-c46756192" target="_blank">
+                                <img src="./assets/images/collaborations-14.jpg" alt="Dropdead">
+                                <div class="image-block__description">Dropdead</div>
+                            </a>
+                        </div>
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/Exile-c52046120" target="_blank">
+                                <img src="./assets/images/collaborations-15.jpg" alt="Exile">
+                                <div class="image-block__description">Exile</div>
+                            </a>
+                        </div>
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/%D0%AF-%D0%91%D0%BE%D0%B3%D0%B0%D1%82%D1%8B%D0%B9-c39441349"
+                                target="_blank">
+                                <img src="./assets/images/collaborations-16.jpg" alt="N.Masteroff">
+                                <div class="image-block__description">N.Masteroff</div>
+                            </a>
+                        </div>
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/Timurka-c46758066" target="_blank">
+                                <img src="./assets/images/collaborations-17.jpg" alt="Timurka Bits">
+                                <div class="image-block__description">Timurka Bits</div>
+                            </a>
+                        </div>
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/Danik-c46758070" target="_blank">
+                                <img src="./assets/images/collaborations-18.jpg" alt="Danik">
+                                <div class="image-block__description">Danik</div>
+                            </a>
+                        </div>
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/%D0%9F%D0%BE%D1%85%D0%B8%D1%82%D0%B8%D1%82%D0%B5%D0%BB%D1%8C-%D0%90%D1%80%D0%BE%D0%BC%D0%B0%D1%82%D0%BE%D0%B2-c48533449"
+                                target="_blank">
+                                <img src="./assets/images/collaborations-20.jpg" alt="Похититель Ароматов">
+                                <div class="image-block__description">Похититель Ароматов</div>
+                            </a>
+                        </div>
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/%D0%AD%D0%BC%D0%B5%D0%BB%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F-c46756175"
+                                target="_blank">
+                                <img src="./assets/images/collaborations-21.jpg" alt="Эмелевская">
+                                <div class="image-block__description">Эмелевская</div>
+                            </a>
+                        </div>
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/CMH-c32930023" target="_blank">
+                                <img src="./assets/images/collaborations-1.jpg" alt="CMH">
+                                <div class="image-block__description">CMH</div>
+                            </a>
+                        </div>
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/mar-maries-c43365174" target="_blank">
+                                <img src="./assets/images/collaborations-2.jpg" alt="mar.maries">
+                                <div class="image-block__description">mar.maries</div>
+                            </a>
+                        </div>
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/Russian-Village-Boys-c57966151" target="_blank">
+                                <img src="./assets/images/collaborations-3.jpg" alt="Russian Village Boys">
+                                <div class="image-block__description">Russian Village Boys</div>
+                            </a>
+                        </div>
+                        <div class="image-block">
+                            <a href="https://vsrap.shop/%D0%94%D0%B0%D1%88%D0%B0-%D0%9A%D0%B0%D0%BF%D0%BB%D0%B0%D0%BD-c41541040"
+                                target="_blank">
+                                <img src="./assets/images/collaborations-4.jpg" alt="Даша Каплан">
+                                <div class="image-block__description">Даша Каплан</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section shop">
+            <div class="section-wrapper shops">
+                <div class="section__content container">
+                    <h2 class="section_title shops__title">Наши магазины находятся в самом в центре Питера и Москвы</h2>
+                    <p class="section_text shops__text">Около 40% оборота нашего магазина приходится на розничные
+                        продажи. Вы лишаете себя этих продаж, если не занимаетесь розницей. К счастью, мы уже открыли
+                        свои магазины в центре Питера и Москвы.</p>
+                </div>
+                <div class="shops-images images">
+                    <div class="images__block">
+                        <div class="shops__video images__spb">
+                            <video data-autoplay loop muted
+                                poster="./assets/images/shop-1.jpg">
+                                <source data-src="./assets/videos/shops-spb.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+
+                        <div class="block_text block_text-spb">
+                            <h3 class="section_title small">Санкт-Петербург</h3>
+                            <h3 class="section_title small">Лиговский пр-т, 64</h3>
+                        </div>
+                    </div>
+                    <div class="images__block">
+                        <div class="shops__video images__msk">
+                            <video data-autoplay loop muted
+                                poster="./assets/images/shop-2.jpg">
+                                <source data-src="./assets/videos/shops-msk.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+
+
+                        <div class="block_text block_text-msk">
+                            <h3 class="section_title small">Москва</h3>
+                            <h3 class="section_title small">Петровский б-р, 9/1</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section site">
+            <div class="section-wrapper our-works">
+                <div class="section__content container">
+                    <h2 class="section_title heading extended our-works__title">Мы делаем худи, футболки, сумки, носки,
+                        кепки, шапки, стикеры, чехлы и др.</h2>
+                    <p class="section_text our-works__text">
+                        Самые популярные позиции, генерирующие основную часть продаж - это трикотажные изделия. Мы
+                        поможем
+                        разработать индивидуальный и запоминающийся дизайн, а также выбрать один из множества вариантов
+                        нанесения.
+                    </p>
+                </div>
+                <div class="section__images flex-3">
+                    <div class="our-works__block work">
+                        <a href="https://vsrap.shop/%D0%9A%D0%B5%D0%BF%D0%BA%D0%B8-%D0%B8-%D1%88%D0%B0%D0%BF%D0%BA%D0%B8-c32129077"
+                            target="_blank">
+                            <img src="./assets/images/our-works-1.jpg" alt="Кепки">
+                            <div class="work__text">Кепки</div>
+                        </a>
+                    </div>
+                    <div class="our-works__block work">
+                        <a href="https://vsrap.shop/%D0%9A%D0%BE%D1%84%D1%82%D1%8B-c32129079" target="_blank">
+                            <img src="./assets/images/our-works-2.jpg" alt="Кофты">
+                            <div class="work__text">Кофты</div>
+                        </a>
+                    </div>
+                    <div class="our-works__block work">
+                        <a href="https://vsrap.shop/%D0%A4%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D0%BA%D0%B8-c32129081"
+                            target="_blank">
+                            <img src="./assets/images/our-works-3.jpg" alt="Футболки">
+                            <div class="work__text">Футболки</div>
+                        </a>
+                    </div>
+                    <div class="our-works__block work">
+                        <a href="https://vsrap.shop/%D0%9D%D0%BE%D1%81%D0%BA%D0%B8-c40742384" target="_blank">
+                            <img src="./assets/images/our-works-4.jpg" alt="Носки">
+                            <div class="work__text">Носки</div>
+                        </a>
+                    </div>
+                    <div class="our-works__block work">
+                        <a href="https://vsrap.shop/%D0%9F%D0%B8%D0%BD%D1%8B-c40742382" target="_blank">
+                            <img src="./assets/images/our-works-5.jpg" alt="Пины">
+                            <div class="work__text">Пины</div>
+                        </a>
+                    </div>
+                    <div class="our-works__block work">
+                        <a href="https://vsrap.shop/%D0%A1%D1%82%D0%B8%D0%BA%D0%B5%D1%80%D1%8B-c40742383"
+                            target="_blank">
+                            <img src="./assets/images/our-works-6.jpg" alt="Стикеры">
+                            <div class="work__text">Стикеры</div>
+                        </a>
+                    </div>
+                    <div class="our-works__block work">
+                        <a href="https://vsrap.shop/%D0%A1%D1%83%D0%BC%D0%BA%D0%B8-c36162210" target="_blank">
+                            <img src="./assets/images/our-works-7.jpg" alt="Сумки">
+                            <div class="work__text">Сумки</div>
+                        </a>
+                    </div>
+                    <div class="our-works__block work">
+                        <a href="https://vsrap.shop/%D0%A7%D0%B5%D1%85%D0%BB%D1%8B-%D0%BD%D0%B0-iPhone-c32129083"
+                            target="_blank">
+                            <img src="./assets/images/our-works-8.jpg" alt="Чехлы">
+                            <div class="work__text">Чехлы</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section production">
+            <div class="section-wrapper preview-block first">
+                <div class="section__content">
+                    <h2 class="section_title heading">
+                        Делать мерч с нами проще - ведь всю работу мы берём на себя.
+                    </h2>
+
+                    <ul class="section_list">
+                        <li class="section_text white">- Разработка дизайна и лекал</li>
+                        <li class="section_text white">- Полный цикл производства</li>
+                        <li class="section_text white">- Продвижение и реклама на всех наших площадках</li>
+                        <li class="section_text white">- Таргетированное продвижение на вашу аудиторию</li>
+                        <li class="section_text white">- Обработка заказов и отправка клиентам</li>
+                        <li class="section_text white">- Реализация в оффлайн-точках продаж</li>
+                        <li class="section_text white">- Тех.поддержка клиентов и возвраты</li>
+                    </ul>
+                </div>
+                <img class="production__img-mobile" src="./assets/images/production-img-mobile.png" alt="">
+            </div>
+        </section>
+
+        <section class="section preview-sell">
+            <div class="video__all video-bg">
+                <video width="100%" height="auto" data-autoplay loop muted
+                    poster="./assets/images/preview-sell-bg.png">
+                    <source src="./assets/videos/4.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="section-wrapper preview-block first">
+                <div class="section__content">
+                    <h2 class="section_title heading">
+                        Если у вас есть свои товары, мы можем вам помочь реализовать их.
+                    </h2>
+                    <ul class="section_list">
+                        <li class="section_text white">- Разместим Ваши товары на сайте vsrap.ru и в соцсетях</li>
+                        <li class="section_text white">- Осуществим обработку заказов и их отправку</li>
+                        <li class="section_text white">- Рекламное продвижение товаров в наших соцсетях</li>
+                        <li class="section_text white">- Размещение в офлайн-магазинах «VSRAP»</li>
+                    </ul>
+                    <p class="preview-sell__text">Каждое предложение мы рассматриваем индивидуально.</p>
+                </div>
+                <img class="production__img-mobile" src="./assets/images/preview-sell-img-mobile.png" alt="">
+            </div>
+        </section>
+
+        <section class="section last-screen">
+            <div class="last-screen__content">
+                <h2 class="last-screen__title">WELCOME TO THE <span>FAMILY</span></h2>
+                <a href="mailto:wear@vsrap.ru" class="last-screen__email">wear@vsrap.ru</a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+let fullpagePrime = new fullpage('#fullpage', {
+    navigation: true,
+    scrollingSpeed: 700,
+    anchors: ['main', 'collaborations', 'shops', 'site', 'works', 'preview-sell',
+        'contact'],
+    paddingTop: '70px',
+});
+
+let fullpageFunc = () => {
+    let width = document.documentElement.clientWidth;
+    let height = document.documentElement.clientHeight;
+    let offFullpage = (width / height) * 100;
+    let isIOS = /iPad/.test(navigator.userAgent) && !window.MSStream;
+    if (isIOS) {
+        fullpage_api.setResponsive(true);
+        document.querySelector(".our-works").classList.add('our-works--ipad');
+        document.querySelector(".collaborations").classList.add('collaborations--ipad');
+    } else {
+        if (document.documentElement.clientWidth < 1025) {
+            fullpage_api.setResponsive(true);
+            document.querySelector('.collaboration__section.fp-section').classList.remove('large-vertical');
+            document.querySelector('.collaboration__section .fp-tableCell').classList.remove('large-vertical');
+            document.querySelector('.site.fp-section').classList.remove('large-vertical');
+            document.querySelector('.site .fp-tableCell').classList.remove('large-vertical');
+        } else if (document.documentElement.clientWidth > 1025 && offFullpage < 145) {
+            fullpage_api.setResponsive(true);
+        } else {
+            fullpage_api.setResponsive(false);
+            document.querySelector('.collaboration__section.fp-section').classList.remove('large-vertical');
+            document.querySelector('.collaboration__section .fp-tableCell').classList.remove('large-vertical');
+            document.querySelector('.site.fp-section').classList.remove('large-vertical');
+            document.querySelector('.site .fp-tableCell').classList.remove('large-vertical');
+        }
+    }
+}
+fullpageFunc();
+window.addEventListener("resize", fullpageFunc);
+    </script>
+</body>
+
+</html>
